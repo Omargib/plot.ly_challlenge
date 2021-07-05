@@ -44,28 +44,28 @@ function buildCharts(selID){
 
     // Bubble chart
     
-    var bubbletrace = {
-        x: OTUid,
-        y: samplevalue,
-        mode: 'markers',
-        marker: {
-            size: [40,60,80,100]
-        }
+        var bubbletrace = {
+            x: OTUid,
+            y: samplevalue,
+            mode: 'markers',
+            marker: {
+                size: samplevalue
+            }
 
-    };
+        };
 
-    var bubble = [bubbletrace];
+        var bubble = [bubbletrace];
 
-    var layoutb = {
-        tittle: 'Marker Size',
-        showlegend: false,
-        height: 600,
-        width: 600
+        var layoutb = {
+            tittle: 'Marker Size',
+            showlegend: false,
+            height: 600,
+            width: 600
 
 
-    };
+        };
 
-    Plotly.newPlot('bubbleplot', bubble, layoutb);
+        Plotly.newPlot('bubbleplot', bubble, layoutb);
 
 
     
